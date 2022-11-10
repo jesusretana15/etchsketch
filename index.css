@@ -1,0 +1,53 @@
+body{
+    background: rgb(59, 50, 44);
+    color: rgb(221, 237, 170);
+    font-family: 'Peralta', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    border: none;
+    font-family: 'Peralta', cursive;
+    background-color: rgb(28, 17, 10);
+    color: rgb(221, 237, 170);
+    height: 2.2rem;
+    width: 10rem;
+    border-radius: .1875rem;
+}
+
+button:hover{
+    background-color: rgb(134, 103, 91);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#grid {
+    margin-top: 2.5%;
+    height: 40rem;
+    width: 40rem;
+    column-gap: 1px;
+    row-gap: 1px;
+    background-color: rgb(28, 17, 10); 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+
+.divBox {
+    display: inline-block;
+    background-color:azure ;
+    width: auto;
+    height: auto;
+    transition: all 0s ease 100s; /*delay 1s*/
+
+ 
+}
+
+.divBox:hover{
+    background-color: rgb(211, 185, 159);
+    transition-delay: 0s;
+  visibility: visible;
+}
